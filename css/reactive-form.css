@@ -1,0 +1,63 @@
+/* CORE CSS // Shouldn't be removed */
+            .react-item.react-active .typed-cursor{
+                display:inline;
+            }
+
+            .react-item.react-completed .typed-cursor{
+                display:none;
+            }
+
+            .react-item{
+                display:none;
+            }
+
+            .react-item.react-completed,
+            .react-item.react-active{
+                display:block;
+            }
+
+            .react-item input{
+                height:0;
+                width:0;
+                padding:0;
+                border:none;
+                /*block to go to new line*/
+                display:block 
+            }
+
+            /* Flashing cursor copied from http://www.mattboldt.com/demos/typed-js/ */
+            .react-item .typed-cursor{
+                display:none;
+                opacity: 1;
+                font-weight: 100;
+                -webkit-animation: blink 0.9s infinite;
+                -moz-animation: blink 0.9s infinite;
+                -ms-animation: blink 0.9s infinite;
+                -o-animation: blink 0.9s infinite;
+                animation: blink 0.9s infinite;
+            }
+            @-keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
+            @-webkit-keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
+            @-moz-keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
+            @-ms-keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
+            @-o-keyframes blink{
+                0% { opacity:1; }
+                50% { opacity:0; }
+                100% { opacity:1; }
+            }
