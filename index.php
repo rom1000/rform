@@ -27,7 +27,7 @@
             
             <p>> Is there anything you want to say?</p>
 
-            <p>> Is that all.?</p>
+            <p>> Is that all?</p>
 
             <div class="end-message"></div>
         </div>
