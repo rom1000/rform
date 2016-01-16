@@ -3,7 +3,7 @@ a shell-like form / not mobile friendly yet
 
 #usage
 
-<div class="form-react">
+<pre><div class="form-react">
     <p>> Hi! How are you?</p>
     <p>> What's your name?</p>
     <p>> What's your e-mail address?</p>
@@ -11,4 +11,4 @@ a shell-like form / not mobile friendly yet
     <p>> Is that all?</p>
     <div class="end-message"></div>
 </div>
-<div class="result-react"></div>
+<div class="result-react"></div></pre>
