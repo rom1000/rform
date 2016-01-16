@@ -8,12 +8,12 @@
 			'selector':'.q-form',
 			'result':function(){}
 			},
-			param=$.extend(defauts, options),
-			classActive='react-active',
-			classCompleted='react-completed',
-			classCursor='typed-cursor',
-			elem=$(this),
-			i=0;
+		param=$.extend(defauts, options),
+		classActive='react-active',
+		classCompleted='react-completed',
+		classCursor='typed-cursor',
+		elem=$(this),
+		i=0;
 
 
 		elem
