@@ -1,6 +1,7 @@
 #rform
 a JQuery shell-like form / not mobile friendly yet
-http://noyta.com/rform/
+
+[Visit website](http://noyta.com/rform/)
 
 #usage
 HTML:
