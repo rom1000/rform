@@ -13,10 +13,10 @@
 			wrapEnd:'.form-react .end-message',
 			endMsg:'<p>Thank you!&#9786;</p>',
 			'result':function(formValues){
-                    // handle the returned values
-                    $(this.wrapResult).html(this.resultMsg(formValues));
-                    $(this.wrapEnd).html(this.endMsg);
-                }
+					// handle the returned values
+					$(this.wrapResult).html(this.resultMsg(formValues));
+					$(this.wrapEnd).html(this.endMsg);
+				}
 			},
 		param=$.extend(defauts, options),
 		classActive='react-active',
