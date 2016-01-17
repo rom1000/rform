@@ -40,9 +40,7 @@
         <script src="js/form.js"></script>
         <script>
         var formValues;
-            $('.form-react').formreact({
-                               
-            });
+            $('.form-react').formreact();
         </script>
     </body>
 </html>
