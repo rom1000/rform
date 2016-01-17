@@ -7,9 +7,9 @@
 		var defauts={
 			selector:'.q-form',
 			wrapResult:'.result-react',
-            resultMsg:function(formValues){
-                return '<p>>> Result: ' + formValues + '</p>'
-            },
+			resultMsg:function(formValues){
+			    return '<p>>> Result: ' + formValues + '</p>'
+			},
             wrapEnd:'.form-react .end-message',
             endMsg:'<p>Thank you!&#9786;</p>',
 			'result':function(formValues){
