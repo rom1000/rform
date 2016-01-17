@@ -5,8 +5,18 @@
 	$.fn.formreact=function(options){
 
 		var defauts={
-			'selector':'.q-form',
-			'result':function(){}
+			selector:'.q-form',
+			wrapResult:'.result-react',
+            resultMsg:function(formValues){
+                return '<p>>> Result: ' + formValues + '</p>'
+            },
+            wrapEnd:'.form-react .end-message',
+            endMsg:'<p>Thank you!&#9786;</p>',
+			'result':function(formValues){
+                    // handle the returned values
+                    $(this.wrapResult).html(this.resultMsg(formValues));
+                    $(this.wrapEnd).html(this.endMsg);
+                }
 			},
 		param=$.extend(defauts, options),
 		classActive='react-active',

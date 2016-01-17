@@ -39,12 +39,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/form.js"></script>
         <script>
+        var formValues;
             $('.form-react').formreact({
-                'result':function(formValues){
-                    // handle the returned values
-                    $('.result-react').html('<p>>> Result: ' + formValues.toString() + '</p>');
-                    $('.form-react .end-message').html('<p>Thank you!&#9786;</p>');
-                }
+                               
             });
         </script>
     </body>
