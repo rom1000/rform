@@ -19,6 +19,5 @@ HTML:
 JQuery:
 
     $('.form-react').formreact({
-        selector:'.q-form',
         wrapResult:'.result-react'
     });
