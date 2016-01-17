@@ -19,9 +19,6 @@ HTML:
 JQuery:
 
     $('.form-react').formreact({
-        'result':function(formValues){
-            // handle the returned values
-            $('.result-react').html('<p>>> Result: ' + formValues.toString() + '</p>');
-            $('.form-react .end-message').html('<p>Thank you!&#9786;</p>');
-        }
+        selector:'.q-form',
+        wrapResult:'.result-react'
     });
