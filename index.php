@@ -40,7 +40,15 @@
         <script src="js/form.js"></script>
         <script>
         var formValues;
-            $('.form-react').formreact();
+            $('.form-react').formreact({
+                selector:'.q-form',
+                wrapResult:'.result-react',
+                endMsg:'<p>Thank you!&#9786;</p>',
+                wrapEnd:'.form-react .end-message',
+                resultMsg:function(formValues){
+                    return '<p>>> Result: ' + formValues + '</p>';
+                }
+            });
         </script>
     </body>
 </html>

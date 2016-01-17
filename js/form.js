@@ -5,13 +5,11 @@
 	$.fn.formreact=function(options){
 
 		var defauts={
-			selector:'.q-form',
-			wrapResult:'.result-react',
-			resultMsg:function(formValues){
-			    return '<p>>> Result: ' + formValues + '</p>'
-			},
-			wrapEnd:'.form-react .end-message',
-			endMsg:'<p>Thank you!&#9786;</p>',
+			selector:'',
+			wrapResult:'',
+			resultMsg:function(){},
+			wrapEnd:'',
+			endMsg:'<p>End message</p>',
 			'result':function(formValues){
 					// handle the returned values
 					$(this.wrapResult).html(this.resultMsg(formValues));
@@ -67,7 +65,7 @@
 				.children('input').on("keyup",function(e){
 
 					var $this=$(this);
-					if(e.keyCode == 13){
+					if(e.keyCode === 13){
 		 	   			if ($this.val()!==''){
 		 	   				
 		 	   				$this
@@ -121,6 +119,6 @@
 		$(param.selector).addClass('react-item');
 
 		return this;
-	}
+	};
 
 })(jQuery);
