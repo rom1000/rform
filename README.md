@@ -1,5 +1,5 @@
 #rform
-a JQuery shell-like form / mobile-friendly
+a JQuery shell-like form / touchscreen-friendly
 
 [Visit website](http://noyta.com/rform/)
 
