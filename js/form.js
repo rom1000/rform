@@ -16,12 +16,12 @@
 					$(this.wrapEnd).html(this.endMsg);
 				}
 			},
-		param=$.extend(defauts, options),
-		classActive='react-active',
-		classCompleted='react-completed',
-		classCursor='typed-cursor',
-		elem=$(this),
-		i=0;
+			param=$.extend(defauts, options),
+			classActive='react-active',
+			classCompleted='react-completed',
+			classCursor='typed-cursor',
+			elem=$(this),
+			i=0;
 
 
 		elem
@@ -33,7 +33,7 @@
 			})
 
 			// Put focus on the react-active input when hovering the wrapping div
-			.mouseover(function(){
+			.on('mouseover click',function(){
 				$(param.selector + '.' + classActive).find('input').focus();
 			})
 
