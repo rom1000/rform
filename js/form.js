@@ -120,5 +120,5 @@
 
 		return this;
 	};
-
+	alert('test');
 })(jQuery);
